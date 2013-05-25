@@ -19,6 +19,7 @@ app.set('port', config.web.port);
 app.get('/api/ping', function(req, res) {
   res.status(200);
   res.end('pong');
+  console.log('ping called');
 });
 
 app.post('/api/reset', function(req, res) {
@@ -110,7 +111,6 @@ function start() {
   utils.eventRelay(screenManager, io.sockets, 'screenRemoved');
 
   contentManager.load();
-  console.log('start() finished');
 }
 
 exports.app = app;
