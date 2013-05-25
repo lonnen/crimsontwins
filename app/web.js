@@ -110,6 +110,7 @@ function start() {
   utils.eventRelay(screenManager, io.sockets, 'screenRemoved');
 
   contentManager.load();
+  console.log('start() finished');
 }
 
 exports.app = app;

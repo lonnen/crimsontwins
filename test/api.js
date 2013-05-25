@@ -12,7 +12,6 @@ describe('api', function() {
 
   before(function() {
     web.start();
-    assert(false);
   });
 
   beforeEach(function() {
