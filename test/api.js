@@ -20,7 +20,6 @@ describe('api', function() {
 
   describe('ping', function(done) {
     it('should return pong', function(done) {
-      web.start();
       supertest(web.app)
         .get('/api/ping')
         .expect(200, 'pong', done);
