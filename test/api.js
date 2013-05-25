@@ -11,6 +11,8 @@ var web = require('../app/web');
 describe('api', function() {
 
   before(function() {
+    web.start();
+    assert(false);
   });
 
   beforeEach(function() {
