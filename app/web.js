@@ -17,9 +17,10 @@ app.set('port', config.web.port);
 
 // === VIEWS ===
 app.get('/api/ping', function(req, res) {
+  console.log('ping called');
   res.status(200);
   res.end('pong');
-  console.log('ping called');
+  console.log('pong sent');
 });
 
 app.post('/api/reset', function(req, res) {
